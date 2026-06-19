@@ -1,0 +1,9 @@
+aiogram>=3.4,<4.0
+requests>=2.31
+beautifulsoup4>=4.12
+lxml>=5.0
+faiss-cpu>=1.8
+numpy>=1.26
+python-dotenv>=1.0
+streamlit>=1.33
+pandas>=2.1

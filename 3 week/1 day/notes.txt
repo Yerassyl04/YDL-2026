@@ -1,0 +1,32 @@
+Neural-Net Lab - Notes
+======================
+
+Files in this folder:
+- lab_intro_to_pytorch.ipynb   (the lab notebook)
+- setup_lab.sh                 (the environment setup script)
+
+To run the lab (no conda activation needed):
+    cd "C:\Users\asus\Yessenov 2026\3 week\1 day"
+    & "C:\Users\asus\anaconda3\envs\nn-lab\Scripts\jupyter-lab.exe"
+
+Notes:
+- The nn-lab conda env (Python 3.11) holds all packages: torch 2.12.1,
+  torchvision, torchviz, torchview, numpy, matplotlib, scikit-learn,
+  jupyterlab, plus graphviz (dot v14.1.2).
+- Always launch with the env's own jupyter (command above) so that
+  "import torch" works. Do NOT use base Anaconda's jupyter.
+- Alternative launch via the env's Python:
+    & "C:\Users\asus\anaconda3\envs\nn-lab\python.exe" -m jupyterlab
+- conda env location: C:\Users\asus\anaconda3\envs\nn-lab
+
+
+1. Сначала закройте текущий сервер (Ctrl+C дважды в терминале), затем запустите так — первая строка нужна, чтобы работал graphviz (dot):
+
+$env:PATH = "C:\Users\asus\anaconda3\envs\nn-lab\Library\bin;" + $env:PATH
+cd "C:\Users\asus\Yessenov 2026\3 week\1 day"
+jupyter notebook
+
+2. В браузере откройте lab_intro_to_pytorch.ipynb и выберите ядро:
+- Меню Kernel → Change kernel → Python (nn-lab)
+
+3. Проверьте: справа сверху должно быть написано Python (nn-lab). Если так — ноутбук работает в среде nn-lab, и ошибки с импортами (torch, torchviz, torchview) исчезнут.
